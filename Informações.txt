@@ -1,0 +1,16 @@
+Fonts:
+Link: <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+Como usar no CSS: font-family: 'Nunito', sans-serif;
+		  font-family: 'Nunito Sans', sans-serif;
+
+Cores:
+ Cor padrão de texto: #181818
+ Cor de titulo: #FD5C00
+ Cor de icones: #F6C53C
+
+Medida de largura da página:
+1200px
+  
