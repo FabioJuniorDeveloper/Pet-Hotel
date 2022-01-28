@@ -2,6 +2,84 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 /* VARIÁVEIS */
+:root {
+    --color-text: #181818;
+    --color-titulo:#FD5C00;
+    --color-icones: #F6C53C;
+}
+/* CONFIGURAÇÃO PADRÃO */
+
+body {
+    width: 100%;
+    background-color: #FFF;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+div.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+/* HEADER */
+header {
+    width: 100%;
+    height: 80px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav ul {
+    display: flex;
+     align-items: center;
+}
+
+header nav ul a, a.logo {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-text);
+    font-size: 0.9375rem;
+}
+header nav ul li {
+    height: 80px;
+}
+header nav ul a {
+    margin-right: 1.5625rem;
+    margin-left: 1.5625rem;
+    border-bottom:  4px solid #FFF ;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+
+}
+header nav ul a:hover {
+    color: var(--color-titulo);   
+    border-bottom: 4px solid var(--color-titulo);
+}
+header nav ul div.telefone a.telefone {
+    margin: 0;
+    border: 0;
+    padding: .7rem 1.2rem .7rem .7rem;
+}
+
+header nav ul div.telefone {
+    border: 2px solid var(--color-titulo);
+    border-radius: 25px;
+    border-top-left-radius:0%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+header nav ul div.telefone .icon {
+    background-color: var(--color-titulo);
+    padding: 0.6rem;
+}
