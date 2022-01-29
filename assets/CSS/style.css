@@ -11,6 +11,17 @@
     --color-titulo:#FD5C00;
     --color-icones: #F6C53C;
 }
+
+/* ANIMAÇÕES COM INTERAÇÔES COM JAVASCRIPT */
+
+.rotate {
+    transform: rotate(15deg);
+    transition: .3s ease-in;
+}
+.rotate-desativado {
+    transform: rotate(0);
+    transition: .3s ease-in;
+}
 /* CONFIGURAÇÃO PADRÃO */
 
 body {
@@ -24,10 +35,15 @@ div.container {
     margin: 0 auto;
     height: 100%;
 }
+
+h1 {
+    color: var(--color-text);
+    font-family: 'Nunito', sans-serif;
+}
 /* HEADER */
 header {
     width: 100%;
-    height: 80px;
+    height: 100px;
 }
 header nav {
     display: flex;
@@ -47,8 +63,19 @@ header nav ul a, a.logo {
     color: var(--color-text);
     font-size: 0.9375rem;
 }
+
+header nav div.logo {
+    height: 90px;
+    width: 90px;
+}
+
+header nav div.logo a.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 header nav ul li {
-    height: 80px;
+    height: 100%;
 }
 header nav ul a {
     margin-right: 1.5625rem;
@@ -63,13 +90,13 @@ header nav ul a:hover {
     color: var(--color-titulo);   
     border-bottom: 4px solid var(--color-titulo);
 }
-header nav ul div.telefone a.telefone {
+header nav ul div.telefone-cards a.telefone {
     margin: 0;
     border: 0;
     padding: .7rem 1.2rem .7rem .7rem;
 }
 
-header nav ul div.telefone {
+header nav ul div.telefone-cards {
     border: 2px solid var(--color-titulo);
     border-radius: 25px;
     border-top-left-radius:0%;
@@ -79,7 +106,90 @@ header nav ul div.telefone {
     overflow: hidden;
 }
 
-header nav ul div.telefone .icon {
+header nav ul div.telefone-cards .icon {
     background-color: var(--color-titulo);
     padding: 0.6rem;
+}
+
+/* MAIN */
+main {
+    height: 774px;
+    width: 100%;
+     background-image: url('../Imagens/background-main.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; 
+ 
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+main .container .banner-titulo h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 65px;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+main .container .banner-titulo h1 strong {
+    color: var(--color-titulo);
+    font-weight: 800;
+}
+
+main .banner-servico-hotel {
+    display: flex;
+    align-items: center;
+    max-width: 440px;
+    margin-bottom: 4rem;
+
+}
+
+main .banner-servico-hotel .banner-servicos-img {
+    border-right: 1px solid #181818;
+    margin-right: 1.8rem;
+    padding-right: 1.8rem;
+    height: 90px;
+}
+main .banner-servico-hotel .banner-servicos-informacao h3 {
+    color: var(--color-text);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 0.6rem;
+}
+main .banner-servico-hotel .banner-servicos-informacao h3:hover {
+    color: var(--color-titulo);
+}
+
+main .banner-img img {
+    width: 100%;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+main .banner-titulo{
+    padding-top: 6.25rem;
+}
+main .banner-img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* SECTION SOBRE NÓS */
+
+section.Sobre h1 {
+    font-size: 57px;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 1.2rem;
+}
+
+section.Sobre .sobre-informacoes-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }

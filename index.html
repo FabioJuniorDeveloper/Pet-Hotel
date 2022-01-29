@@ -20,34 +20,96 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">RecreaCão</a>
+                <div class="logo">
+                    <a href="https://www.instagram.com/recreacaom/" target="_blank" class="logo">
+                        <img src="assets/Imagens/logo-nova-removebg-preview.png" alt="Logo Marquinhos Pet">
+                    </a>
+                </div>
+
                 <ul>
 
-                    <li><a href="">Home</a> </li>
-
-                    <li><a href="">Sobre Nós</a> </li>
-
-
+                    <li><a href="#banner">Home</a> </li>
+                    <li><a href="#Sobre">Sobre Nós</a> </li>
                     <li><a href="">Serviços</a> </li>
-
-
                     <li><a href="">Agendamento</a> </li>
-
-
                     <li><a href="">Contato</a> </li>
-
-                    <div class="telefone">
+                    <div class="telefone-cards">
                         <div class="icon">
                             <i class='bx bxs-phone' style='color:#ffffff'></i>
                         </div>
 
-                        <a href="" class="telefone">(11) 96598-1377</a>
+                        <a href="https://api.whatsapp.com/send?phone=551196598-1377" target="_blank"
+                            class="telefone">(11)
+                            96598-1377</a>
                     </div>
                 </ul>
             </nav>
         </div>
     </header>
-    <main></main>
+    <main class="banner" id="banner">
+        <div class="container">
+            <div class="banner-titulo">
+                <h1><strong>Marquinhos Pet</strong> <br> Adestramento, creche e hotel</h1>
+                <div class="banner-servico-hotel">
+                    <div class="banner-servicos-img">
+                        <img src="assets/Imagens/icons/Icons-Pawsitive.svg" alt="imagem de Hotel">
+                    </div>
+                    <div class="banner-servicos-informacao">
+                        <h3>Pet Hotel</h3>
+                        <p>Lugar excepcional, com conforto,segurança, carinho com os cães e varias atividades para os
+                            pets, e com ótimo custo benéfico.</p>
+                    </div>
+                </div>
+                <div class="banner-servicos-osso">
+                    <a href="https://api.whatsapp.com/send?phone=551196598-1377" target="_blank">
+                        <img src="assets/Imagens/Agende agora (1).png" class="osso-img" alt="Imagemd de Osso"
+                            onmouseover="rotate()" onmouseout="rotateDesativado()">
+                    </a>
+
+                </div>
+            </div>
+            <div class="banner-img">
+                <img src="assets/Imagens/dog-img.jpeg" alt="Imagem de cachorro">
+            </div>
+        </div>
+    </main>
+
+    <section class="Sobre" id="Sobre">
+        <div class="container">
+            <h1>Sobre Nós</h1>
+            <article class="sobre-informacoes-cards">
+                <article>Adestramento hospedado, creche e hotel que conta com toda experiência de profissionais
+                    especializados e que amam o quê fazem! No Recreacão seu animal receberá toda atenção e cuidado que
+                    precisa, afinal já são mais de 8 anos transformando a vida de centenas de tutores e seus animais.
+                </article>
+                <article>...</article>
+                <article>Video</article>
+            </article>
+        </div>
+    </section>
+
+
+
+    <script src="assets/JS/script.js"></script>
 </body>
 
 </html>
+
+<!-- 
+    Solução da imagem:
+    main .banner-img img {
+            width: 58vw;
+        object-fit: cover;
+        height: 100%;
+    }
+    .banner-titulo {
+        height: 100%;
+        padding-top: 100px;
+    }
+    main {
+        height: calc(100vh - 100px);
+        overflow: hidden;
+    }
+
+
+ -->
