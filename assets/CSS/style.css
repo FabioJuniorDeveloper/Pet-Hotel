@@ -4,6 +4,10 @@
     margin: 0;
     list-style: none;
 }
+html {
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 70px; */
+  }
 
 /* VARIÁVEIS */
 :root {
@@ -337,14 +341,30 @@ section.Clientes article.clientes-area article.cliente-depoimento {
     padding: 1.875rem;
     border-radius: 6px;
     margin-bottom: 0.9375rem;
+    position: relative;
 }
 
-section.Clientes article.clientes-area article.cliente-depoimento::before {
-    content: "";
-}
+
 section.Clientes article.clientes-area article.cliente-depoimento p {
     font-weight: 700;
 }
+section.Clientes article.clientes-area article.cliente-depoimento i {
+    position: absolute;
+    top: -21px;
+    left: -10px;
+    font-size: 2.25rem;
+}
 section.Clientes article.clientes-area  h5 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+}
+
+
+section.Clientes article.clientes-area .cliente-foto {
+    display: flex;
+    align-items: center;
+}
+
+section.Clientes article.clientes-area .cliente-foto img {
+    border-radius: 50%;
+    margin: 0 1.25rem;
 }

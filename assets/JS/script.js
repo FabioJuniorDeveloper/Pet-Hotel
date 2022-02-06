@@ -22,3 +22,6 @@ function decidirBotaoScroll() {
 }
 
 window.addEventListener('scroll', decidirBotaoScroll)
+
+
+
