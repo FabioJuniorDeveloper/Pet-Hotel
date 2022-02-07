@@ -16,6 +16,7 @@ html {
     --color-icones: #F6C53C;
     --background-hover: #f4f4f4;
     --background-whatsApp: #34af23;
+    --color-text-btn:#FFF;
 }
 
 /* ANIMAÇÕES COM INTERAÇÔES COM JAVASCRIPT */
@@ -46,7 +47,7 @@ div.container {
     margin: 0 auto;
     height: 100%;
 }
-section.Sobre, section.Servicos, section.Clientes {
+section.Sobre, section.Servicos, section.Clientes, section.Agendamento, section.Localização {
     margin: 8rem 0 2rem 0;
 }
 
@@ -328,7 +329,7 @@ section.Servicos .servico-card p {
     line-height: 1.6rem;
 }
 
-/* SECTION Clientes  */
+/* SECTION CLIENTES  */
 
 section.Clientes article.clientes-area {
     display: grid;
@@ -368,3 +369,46 @@ section.Clientes article.clientes-area .cliente-foto img {
     border-radius: 50%;
     margin: 0 1.25rem;
 }
+
+/* SECTION AGENDAMENTO  */
+section.Agendamento {
+    background: url('../Imagens/backgroung-laranja2.png') no-repeat left;
+    background-size: contain;
+}
+
+section.Agendamento .Agendamento-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+section.Agendamento .Agendamento-area .Agendamento-informacao h1 {
+    font-size: 2.95rem;
+    font-weight: 800;
+}
+section.Agendamento .Agendamento-area .Agendamento-informacao p {
+    font-size: 1.15rem;
+    margin-top: 0.9rem;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+section.Agendamento .Agendamento-area .Agendamento-informacao a {
+    display: inline-block;
+    color: var(--color-text-btn);
+    background-color: var(--color-titulo);
+    padding:.7rem 1.2rem .7rem .7rem ;
+    text-decoration: none;
+    border-radius: 50px;
+    border-top-left-radius: 0%;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border: 2px solid var(--color-titulo);
+    font-family: 'Nunito', sans-serif;
+}
+section.Agendamento .Agendamento-area .Agendamento-informacao a:hover {
+    color: var(--color-titulo);
+}
+
+/* SECTION LOCALIZAÇÃO  */
