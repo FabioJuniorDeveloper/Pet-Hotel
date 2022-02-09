@@ -6,7 +6,7 @@
 }
 html {
     scroll-behavior: smooth;
-    /* scroll-padding-top: 70px; */
+    scroll-padding-top: 108px;
   }
 
 /* VARIÁVEIS */
@@ -17,6 +17,7 @@ html {
     --background-hover: #f4f4f4;
     --background-whatsApp: #34af23;
     --color-text-btn:#FFF;
+    --hover-whatsApp:#3fe129;
 }
 
 /* ANIMAÇÕES COM INTERAÇÔES COM JAVASCRIPT */
@@ -47,7 +48,7 @@ div.container {
     margin: 0 auto;
     height: 100%;
 }
-section.Sobre, section.Servicos, section.Clientes, section.Agendamento, section.Localização {
+section.Sobre, section.Servicos, section.Clientes, section.Agendamento, section.Localização, footer {
     margin: 8rem 0 2rem 0;
 }
 
@@ -73,11 +74,14 @@ h1 {
     transition: .3s ease-in;
 }
 .whatsApp-link:hover {
-    background-color: #3fe129;
+    background-color: var(--hover-whatsApp);
 }
 
 .whatsApp-link > i {
     font-size: 30px;
+}
+a {
+    text-decoration: none;
 }
 /* HEADER */
 header {
@@ -87,6 +91,8 @@ header {
     z-index: 999;
     transition: .3s;
     box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+    position: fixed;
+    inset: 0;
 }
 header nav {
     display: flex;
@@ -154,7 +160,7 @@ header nav ul div.telefone-cards .icon {
 
 /* MAIN */
 main {
-    height: 774px;
+    height: 100vh;
     width: 100%;
      background-image: url('../Imagens/background-main.jpg');
     background-position: top;
@@ -219,7 +225,9 @@ main .banner-img {
 }
 
 /* SECTION SOBRE NÓS */
- 
+section.Sobre {
+    margin-top: 0;
+}
  .titulo-section {
     font-size: 2.95rem;
     text-align: center;
@@ -412,3 +420,136 @@ section.Agendamento .Agendamento-area .Agendamento-informacao a:hover {
 }
 
 /* SECTION LOCALIZAÇÃO  */
+
+.Localização-area {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+.Localização-maps {
+    position: relative;
+ 
+}
+.Localização-maps > img {
+    position: absolute;
+    top: 41%;
+    left: 47.3%;
+    width: 39px;
+}
+
+.Localização-maps > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+.Localização-area .Localização-text {
+    background-color: rgba(242, 243, 245, 1);
+    border-radius: 50px;
+    max-width: 400px;
+}
+
+.Localização-area .Localização-text img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.Localização-text-address, .Localização-text-telefone, .Localização-text-email {
+    padding: 0 30px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
+}
+.Localização-text-address {
+    margin-top: 2rem;
+ 
+}
+
+.Localização-area .Localização-text h2 {
+    font-size: 1.35rem;
+    margin-bottom: 0.6rem;
+}
+
+.Localização-text-titulo > i {
+    font-size: 40px;
+}
+
+.Localização-text-titulo {
+     margin-right: 1rem; 
+}
+
+/* FOOTER */
+footer {
+    margin-bottom: 3.5rem;
+}
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+footer .logo-footer {
+    margin-bottom: 2rem;
+    width: 90px;
+    height: 90px;
+}
+footer .logo-footer > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer .footer-midias-sociais {
+    display: flex;
+    align-items: center;
+}
+footer .footer-midias-sociais a.midia-link {
+    background-color: var(--color-titulo);
+    margin-right: .5rem;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid var(--color-titulo);
+}
+footer .footer-midias-sociais a.midia-link > i {
+    font-size: 25px;
+    color: #FFF;
+ 
+}
+footer .footer-midias-sociais a.midia-link > i:hover {
+    color: var(--color-titulo);
+}
+footer h3 {
+    margin-bottom: 1rem;
+    color: var(--color-titulo);
+    font-size: 1.4375rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+footer .footer-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+footer div.footer-flex p {
+    margin-left: 0.7rem;
+    font-size: .85em;
+    font-weight: 600;
+}
+
+footer article.footer-text p, a.serviço {
+    font-size: .85em;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    color: #000;
+    display: block;
+}
+footer article.footer-text p:hover, footer a:hover {
+    color: #747474;
+    transition: .3s;
+}
