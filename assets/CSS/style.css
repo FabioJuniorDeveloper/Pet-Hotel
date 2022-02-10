@@ -318,6 +318,9 @@ section.Servicos .servico-card {
     background-color: #f2f2f4;
     border-radius: 30px;
     padding: 2.5em 2.8em 2.2em 2.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 section.Servicos .servico-card .servico-icon{
     margin-bottom: 3rem;
@@ -335,6 +338,29 @@ section.Servicos .servico-card h3 {
 section.Servicos .servico-card p {
     margin-bottom: 1.6rem;
     line-height: 1.6rem;
+}
+section.Servicos .servico-card a {
+    color: var(--color-titulo);
+    transition: .3s;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 0.8rem;
+    margin-bottom: 1rem;
+    margin: 0 0.8rem 1rem 0;
+    display: flex;
+    align-items: center;
+}
+section.Servicos .servico-card span {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+section.Servicos .servico-card i {
+    font-size: 1rem;
+}
+section.Servicos .servico-card a:hover {
+    color: var(--color-text);
 }
 
 /* SECTION CLIENTES  */
