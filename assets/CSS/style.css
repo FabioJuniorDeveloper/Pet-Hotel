@@ -48,7 +48,7 @@ div.container {
     margin: 0 auto;
     height: 100%;
 }
-section.Sobre, section.Servicos, section.Clientes, section.Agendamento, section.Localização, footer {
+section.Sobre, section.Servicos, section.Clientes, section.Agendamento, section.Localização, footer, .page-servicos-information, .page-atividades-adicionais {
     margin: 8rem 0 2rem 0;
 }
 
@@ -196,7 +196,7 @@ main .banner-servico-hotel {
 
 }
 
-main .banner-servico-hotel .banner-servicos-img {
+main .banner-servico-hotel .banner-servicos-img, .atividade-icon-img {
     border-right: 1px solid #181818;
     margin-right: 1.8rem;
     padding-right: 1.8rem;
@@ -237,20 +237,20 @@ section.Sobre {
     margin-bottom: 2.25rem;
 }
 
-section.Sobre .sobre-informacoes-cards {
+section.Sobre .sobre-informacoes-cards, .page-servicos-area {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     align-items: flex-end;
 }
 
-section.Sobre .sobre-informacoes-cards article h2 {
+section.Sobre .sobre-informacoes-cards article h2, .page-servicos-card h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 800;
     line-height: 56.64px;
 }
-section.Sobre .sobre-informacoes-cards article p {
+section.Sobre .sobre-informacoes-cards article p, .page-servicos-card p {
     text-align: justify;
     line-height: 28.8px;
  
@@ -258,32 +258,32 @@ section.Sobre .sobre-informacoes-cards article p {
 section.Sobre .sobre-informacoes-cards .sobre-informacoes-text p:nth-child(even) {
     margin-bottom: 2rem;
 }
-section.Sobre .sobre-informacoes-cards article details {
+section.Sobre .sobre-informacoes-cards article details, .page-servicos-card details {
     padding: 1.3em 0.1em;
     border: 1px solid var(--background-hover);
     border-radius: 15px;
     margin-bottom: 0.3rem;
 }
-section.Sobre .sobre-informacoes-cards article details:hover {
+section.Sobre .sobre-informacoes-cards article details:hover, .page-servicos-card details:hover  {
     background-color: var(--background-hover);
     transition: 0.3s;
 }
-section.Sobre .sobre-informacoes-cards article details summary {
+section.Sobre .sobre-informacoes-cards article details summary, .page-servicos-card details summary {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
-section.Sobre .sobre-informacoes-cards article details summary p {
+section.Sobre .sobre-informacoes-cards article details summary p, .page-servicos-card details summary p {
     font-weight: 800;
     font-size: 0.9rem;
 }
-section.Sobre .sobre-informacoes-cards article details .texto-explicacao {
+section.Sobre .sobre-informacoes-cards article details .texto-explicacao, .page-servicos-card details .texto-explicacao {
     padding-left: 72px;
     padding-right: 50px;
 
 }
 
-section.Sobre .sobre-informacoes-cards article details summary i {
+section.Sobre .sobre-informacoes-cards article details summary i, .page-servicos-card details summary i {
     font-size: 35px;
     background-color: var(--color-titulo);
     border-radius: 50%;
@@ -580,4 +580,53 @@ footer article.footer-text p, a.serviço {
 footer article.footer-text p:hover, footer a:hover {
     color: #747474;
     transition: .3s;
+}
+/* PAGINA DE SERVIÇOS */
+
+section.page-servicos-information h2 {
+    font-size: 2.9375rem;
+    margin-bottom: 4rem;
+}
+
+section.page-servicos-information img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* SECTION SERVICOS GUIA */
+section.servicos-guia {
+    margin-top: 0;
+}
+section.servicos-guia a {
+    color: var(--color-text);
+    transition: .3s;
+}
+section.servicos-guia a:hover {
+    color: var(--color-titulo);
+}
+/* SECTION ADESTRAMENTO */
+.adestramento-page img {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+section.adestramento-page, section.lar-page {
+    margin-top: 8rem;
+}
+/* SECTION ATIVIDADES ADICIONAIS */
+section.page-atividades-adicionais .atividades-adicionais-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 80px;
+    align-items: center;
+}
+ 
+.atividade-icon {
+    display: flex;
+    align-items: center;
+}
+.atividade-icon h3 {
+    font-size: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+}
+.atividade-icon-img img {
+    height: 100%;
 }
