@@ -83,6 +83,26 @@ h1 {
 a {
     text-decoration: none;
 }
+.menuMobile {
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+.mm_line {
+    background-color: var(--color-titulo);
+    height: 3px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #FFF;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-titulo);
+    border-radius: 4px;
+}
 /* HEADER */
 header {
     width: 100%;
@@ -204,7 +224,7 @@ main .banner-servico-hotel .banner-servicos-img, .atividade-icon-img {
 }
 main .banner-servico-hotel .banner-servicos-informacao h3 {
     color: var(--color-text);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     cursor: pointer;
     margin-bottom: 0.6rem;
@@ -513,7 +533,7 @@ footer {
 }
 footer .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(201px, 1fr));
     gap: 2rem;
 }
 footer .logo-footer {
@@ -629,4 +649,214 @@ section.page-atividades-adicionais .atividades-adicionais-area {
 }
 .atividade-icon-img img {
     height: 100%;
+}
+
+/* RESPONSIVIDADE */
+@media (min-width:769px) and (max-width:1200px) {
+    .container {
+        padding: 0 20px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        background-color: #FFF;
+    }
+    header nav ul a {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    header nav ul div.telefone-cards {
+        margin: 1rem auto;
+    }
+    main .container .banner-titulo h1 {
+        font-size: 3.5625rem;
+    }
+    section.Sobre .sobre-informacoes-cards, .page-servicos-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sobre-informacoes-video {
+        grid-column: auto;
+    }
+    section.Clientes article.clientes-area {
+        grid-template-columns: repeat(auto-fill, minmax(371px, 1fr));
+    }
+    section.Agendamento .Agendamento-area {
+        grid-template-columns: 1fr;
+        gap: 100px;
+    }
+    section.Agendamento {
+        background-position: top;
+    }
+    .Localização-maps > img {
+        left: 45.3%;
+    }
+}
+@media (min-width:426px) and (max-width:768px)  {
+    main .container {
+        grid-template-columns: 1fr;
+    }
+    main .banner-img {
+        justify-content: center;
+    }
+    main .banner-img img {
+        width: 79%;
+    }
+    section.Sobre {
+        margin-top: 9rem;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        background-color: #FFF;
+    }
+    header nav ul a {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    header nav ul div.telefone-cards {
+        margin: 1rem auto;
+    }
+    main .container .banner-titulo h1 {
+        font-size: 3.5625rem;
+    }
+    section.Sobre .sobre-informacoes-cards, .page-servicos-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sobre-informacoes-video {
+        grid-column: auto;
+    }
+    .sobre-informacoes-video {
+        padding-bottom: 50.5%;
+        width: 87%;
+    }
+    section.Clientes article.clientes-area {
+        grid-template-columns: repeat(auto-fill, minmax(371px, 1fr));
+    }
+    section.Agendamento .Agendamento-area {
+        grid-template-columns: 1fr;
+        gap: 100px;
+    }
+    section.Agendamento {
+        background-position: top;
+    }
+    .Localização-maps > img {
+        left: 45.3%;
+    }
+    article.Agendamento-img img {
+        width: 100%;
+    }
+    .Localização-area {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .Localização-maps {
+        height: 300px;
+        width: 100%;
+    }
+    .Localização-maps > img {
+        top: 36%;
+    }
+}
+
+@media (max-width:425px) {
+    main .container .banner-titulo h1 {
+        font-size: 2.5625rem;
+    }
+    main .container {
+        grid-template-columns: 1fr;
+    }
+    main .banner-img {
+        justify-content: center;
+    }
+    main .banner-img img {
+        width: 79%;
+    }
+    section.Sobre {
+        margin-top: 9rem;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        background-color: #FFF;
+    }
+    header nav ul a {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    header nav ul div.telefone-cards {
+        margin: 1rem auto;
+    }
+    section.Sobre .sobre-informacoes-cards, .page-servicos-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sobre-informacoes-video {
+        grid-column: auto;
+    }
+    .sobre-informacoes-video {
+        padding-bottom: 50.5%;
+        width: 100%;
+    }
+    section.Clientes article.clientes-area {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    section.Agendamento .Agendamento-area {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    section.Agendamento {
+        background-position: top;
+    }
+    .Localização-maps > img {
+        left: 45.3%;
+    }
+    article.Agendamento-img img {
+        width: 100%;
+    }
+    .Localização-area {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .Localização-maps {
+        height: 300px;
+        width: 100%;
+    }
+    .Localização-maps > img {
+        top: 36%;
+    }
 }
