@@ -180,13 +180,13 @@ header nav ul div.telefone-cards .icon {
 
 /* MAIN */
 main {
-    height: 100vh;
+    height: 100%;
     width: 100%;
      background-image: url('../Imagens/background-main.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover; 
- 
+    padding-top: 110px;
 }
 main.servicos-main .container {
     grid-template-columns: repeat(1, 1fr);
@@ -247,9 +247,6 @@ main .banner-img {
 }
 
 /* SECTION SOBRE NÓS */
-section.Sobre {
-    margin-top: 0;
-}
  .titulo-section {
     font-size: 2.95rem;
     text-align: center;
@@ -271,7 +268,6 @@ section.Sobre .sobre-informacoes-cards article h2, .page-servicos-card h2 {
     line-height: 56.64px;
 }
 section.Sobre .sobre-informacoes-cards article p, .page-servicos-card p {
-    text-align: justify;
     line-height: 28.8px;
  
 }
@@ -428,7 +424,7 @@ section.Clientes article.clientes-area .cliente-foto img {
 
 /* SECTION AGENDAMENTO  */
 section.Agendamento {
-    background: url('../Imagens/backgroung-laranja2.png') no-repeat left;
+    background: url('../Imagens/backgroung-laranja2.webp') no-repeat left;
     background-size: contain;
 }
 
@@ -614,9 +610,6 @@ section.page-servicos-information img {
     object-fit: cover;
 }
 /* SECTION SERVICOS GUIA */
-section.servicos-guia {
-    margin-top: 0;
-}
 section.servicos-guia a {
     color: var(--color-text);
     transition: .3s;
@@ -634,7 +627,7 @@ section.adestramento-page, section.lar-page {
 /* SECTION ATIVIDADES ADICIONAIS */
 section.page-atividades-adicionais .atividades-adicionais-area {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 80px;
     align-items: center;
 }
@@ -644,7 +637,7 @@ section.page-atividades-adicionais .atividades-adicionais-area {
     align-items: center;
 }
 .atividade-icon h3 {
-    font-size: 1.3rem;
+    font-size: 1.125rem;
     font-family: 'Nunito', sans-serif;
 }
 .atividade-icon-img img {
@@ -680,12 +673,6 @@ section.page-atividades-adicionais .atividades-adicionais-area {
     }
     main .container .banner-titulo h1 {
         font-size: 3.5625rem;
-    }
-    section.Sobre .sobre-informacoes-cards, .page-servicos-area {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .sobre-informacoes-video {
-        grid-column: auto;
     }
     section.Clientes article.clientes-area {
         grid-template-columns: repeat(auto-fill, minmax(371px, 1fr));
@@ -779,9 +766,22 @@ section.page-atividades-adicionais .atividades-adicionais-area {
     .Localização-maps > img {
         top: 36%;
     }
+    /* PAGINA DE SERVICOS */
+    section.page-servicos-information img {
+        width: 80%;
+    }
+    section.page-servicos-information .img-page-servicos {
+        text-align: center;
+    } 
+    article.page-servicos-card  .img-end {
+        text-align: end;
+    }
 }
 
 @media (max-width:425px) {
+    html {
+        font-size: 14px;
+    }
     main .container .banner-titulo h1 {
         font-size: 2.5625rem;
     }
@@ -833,7 +833,7 @@ section.page-atividades-adicionais .atividades-adicionais-area {
         width: 100%;
     }
     section.Clientes article.clientes-area {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
     }
     section.Agendamento .Agendamento-area {
         grid-template-columns: 1fr;
@@ -859,4 +859,18 @@ section.page-atividades-adicionais .atividades-adicionais-area {
     .Localização-maps > img {
         top: 36%;
     }
+    .Localização-text-address, .Localização-text-telefone, .Localização-text-email {
+        padding: 0 24px;
+    }
+    /* PAGINA DE SERVICOS CELL */
+    section.page-servicos-information h2 {
+        font-size: 2.5rem;
+    }
+}
+/* RESPONSIVIDADE NA PAGINA DE SERVICOS */
+@media (max-width:653px) {
+    section.page-atividades-adicionais .atividades-adicionais-area {
+        grid-template-columns: 1fr;
+    }
+    
 }
