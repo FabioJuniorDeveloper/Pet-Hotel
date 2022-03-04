@@ -4,20 +4,21 @@
     margin: 0;
     list-style: none;
 }
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 108px;
-  }
+}
 
 /* VARIÁVEIS */
 :root {
     --color-text: #181818;
-    --color-titulo:#FD5C00;
+    --color-titulo: #FD5C00;
     --color-icones: #F6C53C;
     --background-hover: #f4f4f4;
     --background-whatsApp: #34af23;
-    --color-text-btn:#FFF;
-    --hover-whatsApp:#3fe129;
+    --color-text-btn: #FFF;
+    --hover-whatsApp: #3fe129;
 }
 
 /* ANIMAÇÕES COM INTERAÇÔES COM JAVASCRIPT */
@@ -26,10 +27,12 @@ html {
     transform: rotate(15deg);
     transition: .3s ease-in;
 }
+
 .rotate-desativado {
     transform: rotate(0);
     transition: .3s ease-in;
 }
+
 /* CONFIGURAÇÃO PADRÃO */
 
 body {
@@ -38,6 +41,7 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     color: var(--color-text);
 }
+
 strong {
     color: var(--color-titulo);
     font-weight: 800;
@@ -48,7 +52,15 @@ div.container {
     margin: 0 auto;
     height: 100%;
 }
-section.Sobre, section.Servicos, section.Clientes, section.Agendamento, section.Localização, footer, .page-servicos-information, .page-atividades-adicionais {
+
+section.Sobre,
+section.Servicos,
+section.Clientes,
+section.Agendamento,
+section.Localização,
+footer,
+.page-servicos-information,
+.page-atividades-adicionais {
     margin: 8rem 0 2rem 0;
 }
 
@@ -56,6 +68,7 @@ h1 {
     color: var(--color-text);
     font-family: 'Nunito', sans-serif;
 }
+
 .whatsApp-link {
     width: 40px;
     height: 40px;
@@ -73,25 +86,30 @@ h1 {
     text-decoration: none;
     transition: .3s ease-in;
 }
+
 .whatsApp-link:hover {
     background-color: var(--hover-whatsApp);
 }
 
-.whatsApp-link > i {
+.whatsApp-link>i {
     font-size: 30px;
 }
+
 a {
     text-decoration: none;
 }
+
 .menuMobile {
     width: 25px;
     height: 25px;
     display: none;
 }
+
 .mm_line {
     background-color: var(--color-titulo);
     height: 3px;
 }
+
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -99,10 +117,12 @@ a {
 ::-webkit-scrollbar-track {
     background-color: #FFF;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: var(--color-titulo);
     border-radius: 4px;
 }
+
 /* HEADER */
 header {
     width: 100%;
@@ -114,6 +134,7 @@ header {
     position: fixed;
     inset: 0;
 }
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -123,10 +144,11 @@ header nav {
 
 header nav ul {
     display: flex;
-     align-items: center;
+    align-items: center;
 }
 
-header nav ul a, a.logo {
+header nav ul a,
+a.logo {
     text-decoration: none;
     font-weight: 700;
     color: var(--color-text);
@@ -143,9 +165,11 @@ header nav div.logo a.logo img {
     height: 100%;
     object-fit: cover;
 }
+
 header nav ul li {
     height: 100%;
 }
+
 header nav ul a {
     margin-right: 1.5625rem;
     margin-left: 1.5625rem;
@@ -154,9 +178,11 @@ header nav ul a {
     height: 100%;
 
 }
+
 header nav ul a:hover {
-    color: var(--color-titulo);   
+    color: var(--color-titulo);
 }
+
 header nav ul div.telefone-cards a.telefone {
     margin: 0;
     border: 0;
@@ -166,7 +192,7 @@ header nav ul div.telefone-cards a.telefone {
 header nav ul div.telefone-cards {
     border: 2px solid var(--color-titulo);
     border-radius: 25px;
-    border-top-left-radius:0%;
+    border-top-left-radius: 0%;
     height: 35px;
     display: flex;
     align-items: center;
@@ -182,15 +208,17 @@ header nav ul div.telefone-cards .icon {
 main {
     height: 100%;
     width: 100%;
-     background-image: url('../Imagens/background-main.webp');
+    background-image: url('../Imagens/background-main.webp');
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     padding-top: 110px;
 }
+
 main.servicos-main .container {
     grid-template-columns: repeat(1, 1fr);
 }
+
 main .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -198,7 +226,7 @@ main .container {
     gap: 2.5rem;
 }
 
-main .container .banner-titulo h1{
+main .container .banner-titulo h1 {
     font-family: 'Nunito', sans-serif;
     font-size: 65px;
     color: var(--color-text);
@@ -206,7 +234,7 @@ main .container .banner-titulo h1{
     font-weight: 800;
 }
 
-  
+
 
 main .banner-servico-hotel {
     display: flex;
@@ -216,19 +244,22 @@ main .banner-servico-hotel {
 
 }
 
-main .banner-servico-hotel .banner-servicos-img, .atividade-icon-img {
+main .banner-servico-hotel .banner-servicos-img,
+.atividade-icon-img {
     border-right: 1px solid #181818;
     margin-right: 1.8rem;
     padding-right: 1.8rem;
     height: 90px;
 }
-main .banner-servico-hotel .banner-servicos-informacao h3 {
+
+main .banner-servico-hotel .banner-servicos-informacao h2 {
     color: var(--color-text);
     font-size: 1.25rem;
     font-weight: 700;
     cursor: pointer;
     margin-bottom: 0.6rem;
 }
+
 main .banner-servico-hotel .banner-servicos-informacao h3:hover {
     color: var(--color-titulo);
 }
@@ -237,9 +268,11 @@ main .banner-img img {
     width: 100%;
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
-main .banner-titulo{
+
+main .banner-titulo {
     padding-top: 6.25rem;
 }
+
 main .banner-img {
     height: 100%;
     display: flex;
@@ -247,59 +280,75 @@ main .banner-img {
 }
 
 /* SECTION SOBRE NÓS */
- .titulo-section {
+.titulo-section {
     font-size: 2.95rem;
     text-align: center;
     font-weight: 800;
     margin-bottom: 2.25rem;
 }
 
-section.Sobre .sobre-informacoes-cards, .page-servicos-area {
+section.Sobre .sobre-informacoes-cards,
+.page-servicos-area {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     align-items: flex-end;
 }
 
-section.Sobre .sobre-informacoes-cards article h2, .page-servicos-card h2 {
+section.Sobre .sobre-informacoes-cards article h2,
+.page-servicos-card h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 800;
     line-height: 56.64px;
 }
-section.Sobre .sobre-informacoes-cards article p, .page-servicos-card p {
+
+section.Sobre .sobre-informacoes-cards article p,
+.page-servicos-card p {
     line-height: 28.8px;
- 
+
 }
+
 section.Sobre .sobre-informacoes-cards .sobre-informacoes-text p:nth-child(even) {
     margin-bottom: 2rem;
 }
-section.Sobre .sobre-informacoes-cards article details, .page-servicos-card details {
+
+section.Sobre .sobre-informacoes-cards article details,
+.page-servicos-card details {
     padding: 1.3em 0.1em;
     border: 1px solid var(--background-hover);
     border-radius: 15px;
     margin-bottom: 0.3rem;
 }
-section.Sobre .sobre-informacoes-cards article details:hover, .page-servicos-card details:hover  {
+
+section.Sobre .sobre-informacoes-cards article details:hover,
+.page-servicos-card details:hover {
     background-color: var(--background-hover);
     transition: 0.3s;
 }
-section.Sobre .sobre-informacoes-cards article details summary, .page-servicos-card details summary {
+
+section.Sobre .sobre-informacoes-cards article details summary,
+.page-servicos-card details summary {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
-section.Sobre .sobre-informacoes-cards article details summary p, .page-servicos-card details summary p {
+
+section.Sobre .sobre-informacoes-cards article details summary p,
+.page-servicos-card details summary p {
     font-weight: 800;
     font-size: 0.9rem;
 }
-section.Sobre .sobre-informacoes-cards article details .texto-explicacao, .page-servicos-card details .texto-explicacao {
+
+section.Sobre .sobre-informacoes-cards article details .texto-explicacao,
+.page-servicos-card details .texto-explicacao {
     padding-left: 72px;
     padding-right: 50px;
 
 }
 
-section.Sobre .sobre-informacoes-cards article details summary i, .page-servicos-card details summary i {
+section.Sobre .sobre-informacoes-cards article details summary i,
+.page-servicos-card details summary i {
     font-size: 35px;
     background-color: var(--color-titulo);
     border-radius: 50%;
@@ -316,7 +365,7 @@ section.Sobre .sobre-informacoes-cards article details summary i, .page-servicos
 
 }
 
-.sobre-informacoes-video > video {
+.sobre-informacoes-video>video {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -324,6 +373,7 @@ section.Sobre .sobre-informacoes-cards article details summary i, .page-servicos
     top: 0%;
     object-fit: cover;
 }
+
 /* SECTION SERVIÇOS */
 section.Servicos article.servicos-area {
     display: grid;
@@ -340,23 +390,28 @@ section.Servicos .servico-card {
     flex-direction: column;
     justify-content: space-between;
 }
-section.Servicos .servico-card .servico-icon{
+
+section.Servicos .servico-card .servico-icon {
     margin-bottom: 3rem;
 }
+
 section.Servicos .servico-card .servico-icon img {
     width: 72px;
     height: 72px;
 }
+
 section.Servicos .servico-card h3 {
     font-weight: 800;
     font-size: 1.6rem;
     margin-bottom: 1rem;
     font-family: 'Nunito', sans-serif;
 }
+
 section.Servicos .servico-card p {
     margin-bottom: 1.6rem;
     line-height: 1.6rem;
 }
+
 section.Servicos .servico-card a {
     color: var(--color-titulo);
     transition: .3s;
@@ -369,14 +424,17 @@ section.Servicos .servico-card a {
     display: flex;
     align-items: center;
 }
+
 section.Servicos .servico-card span {
     display: flex;
     align-items: center;
     margin-left: 0.5rem;
 }
+
 section.Servicos .servico-card i {
     font-size: 1rem;
 }
+
 section.Servicos .servico-card a:hover {
     color: var(--color-text);
 }
@@ -401,13 +459,15 @@ section.Clientes article.clientes-area article.cliente-depoimento {
 section.Clientes article.clientes-area article.cliente-depoimento p {
     font-weight: 700;
 }
+
 section.Clientes article.clientes-area article.cliente-depoimento i {
     position: absolute;
     top: -21px;
     left: -10px;
     font-size: 2.25rem;
 }
-section.Clientes article.clientes-area  h5 {
+
+section.Clientes article.clientes-area h5 {
     font-size: 1.6rem;
 }
 
@@ -438,6 +498,7 @@ section.Agendamento .Agendamento-area .Agendamento-informacao h1 {
     font-size: 2.95rem;
     font-weight: 800;
 }
+
 section.Agendamento .Agendamento-area .Agendamento-informacao p {
     font-size: 1.15rem;
     margin-top: 0.9rem;
@@ -449,7 +510,7 @@ section.Agendamento .Agendamento-area .Agendamento-informacao a {
     display: inline-block;
     color: var(--color-text-btn);
     background-color: var(--color-titulo);
-    padding:.7rem 1.2rem .7rem .7rem ;
+    padding: .7rem 1.2rem .7rem .7rem;
     text-decoration: none;
     border-radius: 50px;
     border-top-left-radius: 0%;
@@ -459,6 +520,7 @@ section.Agendamento .Agendamento-area .Agendamento-informacao a {
     border: 2px solid var(--color-titulo);
     font-family: 'Nunito', sans-serif;
 }
+
 section.Agendamento .Agendamento-area .Agendamento-informacao a:hover {
     color: var(--color-titulo);
 }
@@ -470,22 +532,25 @@ section.Agendamento .Agendamento-area .Agendamento-informacao a:hover {
     grid-template-columns: 2fr 1fr;
     gap: 40px;
 }
+
 .Localização-maps {
     position: relative;
- 
+
 }
-.Localização-maps > img {
+
+.Localização-maps>img {
     position: absolute;
     top: 41%;
     left: 47.3%;
     width: 39px;
 }
 
-.Localização-maps > iframe {
+.Localização-maps>iframe {
     width: 100%;
     height: 100%;
     border-radius: 50px;
 }
+
 .Localização-area .Localização-text {
     background-color: rgba(242, 243, 245, 1);
     border-radius: 50px;
@@ -499,15 +564,18 @@ section.Agendamento .Agendamento-area .Agendamento-informacao a:hover {
     border-top-right-radius: 50px;
 }
 
-.Localização-text-address, .Localização-text-telefone, .Localização-text-email {
+.Localização-text-address,
+.Localização-text-telefone,
+.Localização-text-email {
     padding: 0 30px;
     margin-bottom: 2rem;
     display: flex;
     align-items: flex-start;
 }
+
 .Localização-text-address {
     margin-top: 2rem;
- 
+
 }
 
 .Localização-area .Localização-text h2 {
@@ -515,37 +583,42 @@ section.Agendamento .Agendamento-area .Agendamento-informacao a:hover {
     margin-bottom: 0.6rem;
 }
 
-.Localização-text-titulo > i {
+.Localização-text-titulo>i {
     font-size: 40px;
 }
 
 .Localização-text-titulo {
-     margin-right: 1rem; 
+    margin-right: 1rem;
 }
 
 /* FOOTER */
 footer {
     margin-bottom: 3.5rem;
 }
+
 footer .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(201px, 1fr));
     gap: 2rem;
 }
+
 footer .logo-footer {
     margin-bottom: 2rem;
     width: 90px;
     height: 90px;
 }
-footer .logo-footer > img {
+
+footer .logo-footer>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 footer .footer-midias-sociais {
     display: flex;
     align-items: center;
 }
+
 footer .footer-midias-sociais a.midia-link {
     background-color: var(--color-titulo);
     margin-right: .5rem;
@@ -558,14 +631,17 @@ footer .footer-midias-sociais a.midia-link {
     border-radius: 50%;
     border: 2px solid var(--color-titulo);
 }
-footer .footer-midias-sociais a.midia-link > i {
+
+footer .footer-midias-sociais a.midia-link>i {
     font-size: 25px;
     color: #FFF;
- 
+
 }
-footer .footer-midias-sociais a.midia-link > i:hover {
+
+footer .footer-midias-sociais a.midia-link>i:hover {
     color: var(--color-titulo);
 }
+
 footer h3 {
     margin-bottom: 1rem;
     color: var(--color-titulo);
@@ -573,6 +649,7 @@ footer h3 {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
 }
+
 footer .footer-flex {
     display: flex;
     align-items: center;
@@ -585,7 +662,8 @@ footer div.footer-flex p {
     font-weight: 600;
 }
 
-footer article.footer-text p, a.serviço {
+footer article.footer-text p,
+a.serviço {
     font-size: .85em;
     font-weight: 600;
     margin-bottom: 0.75rem;
@@ -593,10 +671,13 @@ footer article.footer-text p, a.serviço {
     color: #000;
     display: block;
 }
-footer article.footer-text p:hover, footer a:hover {
+
+footer article.footer-text p:hover,
+footer a:hover {
     color: #747474;
     transition: .3s;
 }
+
 /* PAGINA DE SERVIÇOS */
 
 section.page-servicos-information h2 {
@@ -609,21 +690,27 @@ section.page-servicos-information img {
     height: 100%;
     object-fit: cover;
 }
+
 /* SECTION SERVICOS GUIA */
 section.servicos-guia a {
     color: var(--color-text);
     transition: .3s;
 }
+
 section.servicos-guia a:hover {
     color: var(--color-titulo);
 }
+
 /* SECTION ADESTRAMENTO */
 .adestramento-page img {
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }
-section.adestramento-page, section.lar-page {
+
+section.adestramento-page,
+section.lar-page {
     margin-top: 8rem;
 }
+
 /* SECTION ATIVIDADES ADICIONAIS */
 section.page-atividades-adicionais .atividades-adicionais-area {
     display: grid;
@@ -631,15 +718,17 @@ section.page-atividades-adicionais .atividades-adicionais-area {
     gap: 80px;
     align-items: center;
 }
- 
+
 .atividade-icon {
     display: flex;
     align-items: center;
 }
+
 .atividade-icon h3 {
     font-size: 1.125rem;
     font-family: 'Nunito', sans-serif;
 }
+
 .atividade-icon-img img {
     height: 100%;
 }
@@ -649,11 +738,13 @@ section.page-atividades-adicionais .atividades-adicionais-area {
     .container {
         padding: 0 20px;
     }
+
     .menuMobile {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
+
     header nav ul {
         display: none;
         flex-direction: column;
@@ -664,51 +755,65 @@ section.page-atividades-adicionais .atividades-adicionais-area {
         left: 0;
         background-color: #FFF;
     }
+
     header nav ul a {
         padding: 1rem;
         font-size: 1rem;
     }
+
     header nav ul div.telefone-cards {
         margin: 1rem auto;
     }
+
     main .container .banner-titulo h1 {
         font-size: 3.5625rem;
     }
+
     section.Clientes article.clientes-area {
         grid-template-columns: repeat(auto-fill, minmax(371px, 1fr));
     }
+
     section.Agendamento .Agendamento-area {
         grid-template-columns: 1fr;
         gap: 100px;
     }
+
     section.Agendamento {
         background-position: top;
     }
-    .Localização-maps > img {
+
+    .Localização-maps>img {
         left: 45.3%;
     }
 }
-@media (min-width:426px) and (max-width:768px)  {
+
+@media (min-width:426px) and (max-width:768px) {
     main .container {
         grid-template-columns: 1fr;
     }
+
     main .banner-img {
         justify-content: center;
     }
+
     main .banner-img img {
         width: 79%;
     }
+
     section.Sobre {
         margin-top: 9rem;
     }
+
     .container {
         padding: 0 20px;
     }
+
     .menuMobile {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
+
     header nav ul {
         display: none;
         flex-direction: column;
@@ -719,61 +824,79 @@ section.page-atividades-adicionais .atividades-adicionais-area {
         left: 0;
         background-color: #FFF;
     }
+
     header nav ul a {
         padding: 1rem;
         font-size: 1rem;
     }
+
     header nav ul div.telefone-cards {
         margin: 1rem auto;
     }
+
     main .container .banner-titulo h1 {
         font-size: 3.5625rem;
     }
-    section.Sobre .sobre-informacoes-cards, .page-servicos-area {
+
+    section.Sobre .sobre-informacoes-cards,
+    .page-servicos-area {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .sobre-informacoes-video {
         grid-column: auto;
     }
+
     .sobre-informacoes-video {
         padding-bottom: 50.5%;
         width: 87%;
     }
+
     section.Clientes article.clientes-area {
         grid-template-columns: repeat(auto-fill, minmax(371px, 1fr));
     }
+
     section.Agendamento .Agendamento-area {
         grid-template-columns: 1fr;
         gap: 100px;
     }
+
     section.Agendamento {
         background-position: top;
     }
-    .Localização-maps > img {
+
+    .Localização-maps>img {
         left: 45.3%;
     }
+
     article.Agendamento-img img {
         width: 100%;
     }
+
     .Localização-area {
         grid-template-columns: 1fr;
         justify-items: center;
     }
+
     .Localização-maps {
         height: 300px;
         width: 100%;
     }
-    .Localização-maps > img {
+
+    .Localização-maps>img {
         top: 36%;
     }
+
     /* PAGINA DE SERVICOS */
     section.page-servicos-information img {
         width: 80%;
     }
+
     section.page-servicos-information .img-page-servicos {
         text-align: center;
-    } 
-    article.page-servicos-card  .img-end {
+    }
+
+    article.page-servicos-card .img-end {
         text-align: end;
     }
 }
@@ -782,29 +905,37 @@ section.page-atividades-adicionais .atividades-adicionais-area {
     html {
         font-size: 14px;
     }
+
     main .container .banner-titulo h1 {
         font-size: 2.5625rem;
     }
+
     main .container {
         grid-template-columns: 1fr;
     }
+
     main .banner-img {
         justify-content: center;
     }
+
     main .banner-img img {
         width: 79%;
     }
+
     section.Sobre {
         margin-top: 9rem;
     }
+
     .container {
         padding: 0 20px;
     }
+
     .menuMobile {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
+
     header nav ul {
         display: none;
         flex-direction: column;
@@ -815,62 +946,81 @@ section.page-atividades-adicionais .atividades-adicionais-area {
         left: 0;
         background-color: #FFF;
     }
+
     header nav ul a {
         padding: 1rem;
         font-size: 1rem;
     }
+
     header nav ul div.telefone-cards {
         margin: 1rem auto;
     }
-    section.Sobre .sobre-informacoes-cards, .page-servicos-area {
+
+    section.Sobre .sobre-informacoes-cards,
+    .page-servicos-area {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .sobre-informacoes-video {
         grid-column: auto;
     }
+
     .sobre-informacoes-video {
         padding-bottom: 50.5%;
         width: 100%;
     }
+
     section.Clientes article.clientes-area {
         grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
     }
+
     section.Agendamento .Agendamento-area {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+
     section.Agendamento {
         background-position: top;
     }
-    .Localização-maps > img {
+
+    .Localização-maps>img {
         left: 45.3%;
     }
+
     article.Agendamento-img img {
         width: 100%;
     }
+
     .Localização-area {
         grid-template-columns: 1fr;
         justify-items: center;
     }
+
     .Localização-maps {
         height: 300px;
         width: 100%;
     }
-    .Localização-maps > img {
+
+    .Localização-maps>img {
         top: 36%;
     }
-    .Localização-text-address, .Localização-text-telefone, .Localização-text-email {
+
+    .Localização-text-address,
+    .Localização-text-telefone,
+    .Localização-text-email {
         padding: 0 24px;
     }
+
     /* PAGINA DE SERVICOS CELL */
     section.page-servicos-information h2 {
         font-size: 2.5rem;
     }
 }
+
 /* RESPONSIVIDADE NA PAGINA DE SERVICOS */
 @media (max-width:653px) {
     section.page-atividades-adicionais .atividades-adicionais-area {
         grid-template-columns: 1fr;
     }
-    
+
 }
