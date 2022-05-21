@@ -126,7 +126,7 @@ a {
 /* HEADER */
 header {
     width: 100%;
-    height: 100px;
+    height: 105px;
     background-color: #FFF;
     z-index: 999;
     transition: .3s;
@@ -156,8 +156,8 @@ a.logo {
 }
 
 header nav div.logo {
-    height: 90px;
-    width: 90px;
+    height: 98px;
+    width: 98px;
 }
 
 header nav div.logo a.logo img {
@@ -749,7 +749,7 @@ section.page-atividades-adicionais .atividades-adicionais-area {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 100px;
+        top: 105px;
         width: 100%;
         text-align: center;
         left: 0;
@@ -818,7 +818,7 @@ section.page-atividades-adicionais .atividades-adicionais-area {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 100px;
+        top: 105px;
         width: 100%;
         text-align: center;
         left: 0;
@@ -940,7 +940,7 @@ section.page-atividades-adicionais .atividades-adicionais-area {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 100px;
+        top: 105px;
         width: 100%;
         text-align: center;
         left: 0;
